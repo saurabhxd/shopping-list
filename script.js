@@ -32,7 +32,7 @@ function onAddItemSubmit(e){
         itemToEdit.remove();
         isEditMode = false;
     } else {
-        if(checkIfItemExists){
+        if(checkIfItemExists(newItem)){
             alert('That item already exists!');
             return;
         }
